@@ -1,45 +1,47 @@
-# Data Structures Quiz Study Guide (Goal: 18/20+)
+# Data Structures Quiz Study Guide
+
+Goal: 18/20+
 
 Current score: 14/20
 Target: Fix 6 missed concepts with high-yield review.
 
 ## What To Fix First
 
-1. Hash map and set average-case performance rules.
-2. Dynamic array insertion cost when not appending.
-3. Linked list access cost by index.
+- Hash map and set average-case performance rules.
+- Dynamic array insertion cost when not appending.
+- Linked list access cost by index.
 
-## Core Concept Corrections (From Missed Questions)
+## Core Concept Corrections
 
 1. Singly linked list index access is O(n), not O(1).
-Reason: You must walk node-by-node from the head to reach index k.
+	Reason: You must walk node by node from the head to reach index k.
 
 2. Hash map key lookup is typically O(1) on average.
-Why: Good hash function + controlled load factor keeps buckets short.
+	Why: A good hash function plus a controlled load factor keeps buckets short.
 
-3. Set guarantee: unique elements only (no duplicates).
+3. Sets guarantee unique elements only.
 
 4. Dynamic array insertion at index i is O(n) in the worst case.
-Reason: Elements after i must shift right.
+	Reason: Elements after i must shift right.
 
-5. Hash maps resize (rehash) to keep load factor low.
-Result: Preserves near O(1) average insert/find/delete.
+5. Hash maps resize, or rehash, to keep load factor low.
+	Result: This preserves near O(1) average insert, find, and delete.
 
 6. Set membership tests are typically O(1) on average.
 
 ## Common Traps
 
-1. Confusing average-case with worst-case.
-Tip: If a question says "typically" or "on average," think hash table O(1).
+1. Confusing average case with worst case.
+	Tip: If a question says "typically" or "on average," think hash table O(1).
 
 2. Assuming arrays are O(1) for all insertions.
-Tip: Only append can be O(1) amortized; middle insert is O(n).
+	Tip: Only append can be O(1) amortized; middle insert is O(n).
 
-3. Mixing up set properties with list/array properties.
-Tip: Set = uniqueness, not index order.
+3. Mixing up set properties with list or array properties.
+	Tip: Set means uniqueness, not index order.
 
 4. Forgetting traversal cost in linked lists.
-Tip: Linked list random access is not constant time.
+	Tip: Linked list random access is not constant time.
 
 ## Memory Cues
 
@@ -64,7 +66,7 @@ Spend about 1 minute per item.
 9. What does load factor influence in hash tables?
 10. Give one example of average-case vs worst-case in hashing.
 
-## Drill Answer Key (Quick Check)
+## Drill Answer Key
 
 1. Must traverse from head through nodes -> O(n).
 2. Good hash distribution and low load factor.
@@ -81,8 +83,8 @@ Spend about 1 minute per item.
 
 1. First pass: answer direct definition questions immediately.
 2. Second pass: handle complexity comparison questions carefully.
-3. Final pass: scan for trigger words: average, worst-case, amortized, unique, load factor.
-4. If two answers seem close, pick the one matching the data structure mechanics (traversal, shifting, hashing).
+3. Final pass: scan for trigger words like average, worst case, amortized, unique, and load factor.
+4. If two answers seem close, pick the one matching the data structure mechanics: traversal, shifting, or hashing.
 
 ## 24-Hour Prep Plan
 
